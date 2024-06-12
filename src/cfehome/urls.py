@@ -22,6 +22,7 @@ from .views import (
 )
 
 urlpatterns = [
+    path("", home_view),            # index page -> root page
     path("about/", about_view),
     path('admin/', admin.site.urls),
 ]
