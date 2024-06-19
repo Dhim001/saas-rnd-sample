@@ -4,3 +4,4 @@ python-decouple
 python-dotenv
 psycopg[binary]
 requests
+whitenoise
