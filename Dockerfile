@@ -46,6 +46,9 @@ RUN pip install -r /tmp/requirements.txt
 ARG Django_SECRET_KEY
 ENV Django_SECRET_KEY=${Django_SECRET_KEY}
 
+ARG DJANGO_DEBUG=0
+ENV DJANGO_DEBUG=${DJANGO_DEBUG}
+
 # database isn't available during build
 # run any other commands that do not need the database
 # such as:
